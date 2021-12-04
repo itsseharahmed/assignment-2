@@ -1,27 +1,35 @@
-public class Person {
-   private String   name;
-   
-   
+public class Person
+{
+   protected String name;
+
+   // constructors
    public Person(String initialName)
    {
-      
+      name = initialName;
    }
-   
    public Person()
    {
-     
    }
-   
-   public void setName( String fullName) {
 
-    }
-
-   public String getName() {
-      return null;
+   //methods
+   public void setName( String fullName)
+   {
+      name = fullName;
    }
- 
-   public String toString() {
-   return null;
+   public String getName()
+   {
+      return name;
+   }
+   public void registerFor(Course course)
+   {
+   }
 
+   public boolean isRegisteredInCourse(Course course)
+   {
+      return false;
+   }
+   public String toString()
+   {
+      return "Person class; Name: " + name;
    }
 }
